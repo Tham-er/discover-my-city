@@ -1,101 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
-    <title>My Hometown website🏠</title>
-    
+
+    <title>My Hometown website 🏠</title>
+
 </head>
 
 <body>
     <!-- HERO SECTION -->
-    <div class="hero-section">
+    <header class="section hero">
+        <img src="images/marek-lumi-p9QH0HxUUn0-unsplash.jpg" alt="Tallinn view" class="hero-img" aria-hidden="true">
         <div class="title-sub-container">
             <h1>Visit Tallinn</h1>
             <h2>From Old Town towers to seaside sunsets, Tallinn awaits you.</h2>
         </div>
-    </div>
+    </header>
 
     <!-- ACTIVITIES SECTION -->
-    <div class="activities-section">
-        <h3>Discover 🔎 Tallinn’s Top Three Experiences</h3>
-        <div class="card-container">
+    <main>
+        <div class="section activities" id="act-sec">
+            <h2>Discover 🔎 Tallinn’s Top Three Experiences</h2>
+            <div class="card-container">
 
-            <div class="card" id="card-1">
-                <img src="/images/christina-olshanetska-e3ZO6vMAvzM-unsplash.jpg" alt="Tallinn Old Town">
-                <p>Explore the charm of Tallinn's medieval Old Town.</p>
-                <a href="#popup-1" class="icon">🏰</a>
-            </div>
+                <div class="card" id="card-1">
+                    <a href="#popup-1" aria-label="More information about Tallinn Old Town">
+                        <img src="/My-Hometown-website/images/christina-olshanetska-e3ZO6vMAvzM-unsplash.jpg"
+                            alt="Tallinn Old Town">
+                    </a>
+                    <p>Explore the charm of Tallinn's medieval Old Town.</p>
+                </div>
 
-            <div class="card" id="card-2">
-                <img src="/images/Kalamaja-tallinn-estonia-optimized.jpg" alt="Colorful wooden houses and street art in Kalamaja district">
-                <p>Discover Art & Street Culture in Kalamaja</p>
-                <a href="#popup-2" class="icon">🧑🏻‍🎨</a>
-            </div>
+                <div class="card" id="card-2">
+                    <a href="#popup-2" aria-label="More information about Kalamaja district">
+                        <img src="/My-Hometown-website/images/Kalamaja-tallinn-estonia-optimized.jpg"
+                            alt="Colorful wooden houses and street art in Kalamaja district">
+                    </a>
+                    <p>Discover Art & Street Culture in Kalamaja</p>
+                </div>
 
-            <div class="card" id="card-3">
-                <img src="/images/kadrioru-park-009-visit-estonia.jpg" alt="Kalamaja District">
-                <p>Relax at Kadriorg Park & Visit the Palace</p>
-                <a href="#popup-3" class="icon">🌿</a>
+                <div class="card" id="card-3">
+                    <a href="#popup-3" aria-label="More information about Kadriorg Park and Palace">
+                        <img src="/My-Hometown-website/images/kadrioru-park-009-visit-estonia.jpg"
+                            alt="Kadriorg Park">
+                    </a>
+                    <p>Relax at Kadriorg Park & Visit the Palace</p>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+        <!-- GUIDE SECTION -->
+        <div class="section guide">
+            <h3>👣 Maybe You Want a Guide?</h3>
+            <article>
+                <p>I'm living in Tallinn for a couple of years now 🇪🇪</p>
+                <p>There are some secret places 🌆, cozy corners ☕, and peaceful parks 🌳 that not everyone knows
+                    about...
+                </p>
+                <p>I might just share the golden key with you 🔑✨</p>
+            </article>
+            <img class="gif-img"
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjdpMmxtYnNqOGJ2ODRxbWdmMm03azZ2d2w4ODAxcXd2aWd4dDF2bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3orif9Yd7sPJR8mUxO/giphy.gif"
+                alt="">
+        </div>
+    </main>
 
-    <!-- GUIDE SECTION -->
-    <div class="guide-section">
-        <h3>👣 Maybe You Want a Guide?</h3>
-        <p>I'm living in Tallinn for a couple of years now 🇪🇪</p>
-        <p>There are some secret places 🌆, cozy corners ☕, and peaceful parks 🌳 that not everyone knows about...</p>
-        <p>I might just share the golden key with you 🔑✨</p>
-        <img class="gif-img" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjdpMmxtYnNqOGJ2ODRxbWdmMm03azZ2d2w4ODAxcXd2aWd4dDF2bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3orif9Yd7sPJR8mUxO/giphy.gif" alt="">
-    </div>
-    
     <!-- FOOTER SECTION -->
-    <footer class="footer-section"> 
-        <a href="https://discord.com/users/1thamer_" target="_blank" class="discord-link">🔗 Connect with me on Discord</a>
-        <img src="/Icons/Discord-Symbol-White.svg" alt="Discord Icon" class="discord-icon">
+    <footer class="section footer">
+        <a href="https://discord.com/users/1thamer_" target="_blank" class="discord-link">🔗 Connect with me on
+            Discord</a>
+        <img src="/My-Hometown-website/Icons/Discord-Symbol-White.svg" alt="Discord Icon" class="discord-icon">
     </footer>
-    
-    
+
+
     <!-- POPUPS SECTION -->
     <!-- popup-1-->
-    <div class="popup" id="popup-1"> 
+    <div class="popup" id="popup-1">
         <div class="popup-content">
-            <a href="#" class="close-button">𝘅</a>
+            <a href="#act-sec" class="close-button" aria-label="Close popup">𝘅</a>
             <h3>Old Town</h3>
-            <ul> 
+            <ul>
                 <li>🏰 Climb St. Olaf’s Church for panoramic city views</li>
                 <li>🧱 Walk along the medieval city walls and towers</li>
                 <li>🍽️ Enjoy Estonian cuisine at a traditional Old Town tavern</li>
             </ul>
         </div>
     </div>
-    
+
     <!-- popup-2-->
-    <div class="popup" id="popup-2"> 
+    <div class="popup" id="popup-2">
         <div class="popup-content">
-            <a href="#" class="close-button">𝘅</a>
+            <a href="#act-sec" class="close-button" aria-label="Close popup">𝘅</a>
             <h3>Kalamaja</h3>
-            <ul> 
+            <ul>
                 <li>🎨Explore the Telliskivi Creative City for street art and local design shops</li>
                 <li>🐟Visit the Seaplane Harbour Museum for maritime history and real submarines</li>
                 <li>☕Relax in cozy cafés inside colorful wooden houses</li>
             </ul>
         </div>
     </div>
-    
+
     <!-- popup-3 -->
-    <div class="popup" id="popup-3"> 
+    <div class="popup" id="popup-3">
         <div class="popup-content">
-            <a href="#" class="close-button">𝘅</a>
+            <a href="#act-sec" class="close-button" aria-label="Close popup">𝘅</a>
             <h3>Kadriorg</h3>
-            <ul> 
+            <ul>
                 <li>🏛️ Stroll through Kadriorg Palace and its baroque gardens</li>
                 <li>🖼️ Discover Estonian and international art at the Kumu Art Museum</li>
                 <li>🌳 Take a peaceful walk or picnic in Kadriorg Park</li>
